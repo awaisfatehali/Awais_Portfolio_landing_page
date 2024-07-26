@@ -39,6 +39,7 @@ nav > a.active
 }
 section{
     min-height: 100vh;
+    min-width:100vw;
     background-color: #1f242d;
     display: flex;
     justify-content: center;
