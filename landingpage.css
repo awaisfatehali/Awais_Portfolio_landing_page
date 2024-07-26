@@ -803,7 +803,6 @@ footer {
         flex-direction: column;
         margin-left: 1.25rem;
         padding-top: 1.875rem;
-        box-shadow: 0 0 0.625rem #fff;
         min-width: 37.5rem;
     }
 
@@ -814,7 +813,6 @@ footer {
 
     .prob_sol {
         padding-top: 1.875rem;
-        box-shadow: 0 0 0.625rem #fff;
         padding-bottom: 1.875rem;
     }
 }
@@ -886,7 +884,6 @@ footer {
     .web_dev,
     .prob_sol {
         padding: 1.25rem;
-        box-shadow: 0 0 0.625rem #fff;
     }
 
     .web_dev > h1,
