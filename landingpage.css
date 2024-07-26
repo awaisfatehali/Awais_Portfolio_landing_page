@@ -1,243 +1,264 @@
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
-header{
+
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 120px;
+    padding: 1.25rem 7.5rem;
     background-color: #11141a;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 100; */
+    z-index: 100;
+}
 
-}
-.logo{
-    font-size: 30px;
+.logo {
+    font-size: 1.875rem;
     color: #fff;
     text-decoration: none;
-    font-weight: 700 ;
+    font-weight: 700;
 }
-.nav > a{
-    font-size: 18px;
+
+.nav > a {
+    font-size: 1.125rem;
     text-decoration: none;
     color: #fff;
-    margin-left: 35px;
+    margin-left: 2.1875rem;
     font-weight: 500;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
+
 .nav > a:hover,
-nav > a.active
-{
+nav > a.active {
     color: #0ef;
 }
-section{
+
+section {
     min-height: 100vh;
-    min-width:100vw;
     background-color: #1f242d;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main{
+.main {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
-.set{
 
+.set {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-#contacts{
+
+#contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#Home p{
+
+#Home p {
     text-align: center;
     width: 100%;
     height: 100%;
     color: rgb(114, 114, 126);
 }
-#Home  h1{
-    font-size: 30px;
+
+#Home h1 {
+    font-size: 1.875rem;
     font-weight: 900;
     color: #fff;
 }
-.info{
+
+.info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.img{
-    height: 250px;
-    width: 250px;
-    padding: 15px;
+
+.img {
+    height: 15.625rem;
+    width: 15.625rem;
+    padding: 0.9375rem;
     background-image: url(1.png);
     background-size: cover;
-padding-left: 10px;
 }
-#About{
+
+#About {
     background-color: #323949;
 }
-.About{
-    padding: 120px 0px;
+
+.About {
+    padding: 7.5rem 0;
     width: 50%;
+    margin: auto;
 }
-.About > h1{
-    font-size: 30px;
+
+.About > h1 {
+    font-size: 1.875rem;
     font-weight: 700;
     color: #fff;
-    padding: 10px 0px;
+    padding: 0.625rem 0;
 }
-.About > p{
-    padding-bottom: 15px;
+
+.About > p {
+    padding-bottom: 0.9375rem;
     color: rgb(114, 114, 126);
 }
-.cv{
-    font-size: 18px;
+
+.cv {
+    font-size: 1.125rem;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    transition: 0.3s;
-    border:1px solid #11141a;
+    transition: background-color 0.3s;
+    border: 1px solid #11141a;
     border-radius: 25% 10%;
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 0.625rem 1.25rem;
+    margin-top: 0.625rem;
 }
-.cv:hover{
+
+.cv:hover {
     background-color: #11141a;
 }
-.Skills{
-    padding: 120px 0px;
+
+.Skills {
+    padding: 7.5rem 0;
     width: 50%;
+    margin: auto;
 }
-.Skills > h1{
-    font-size: 30px;
+
+.Skills > h1 {
+    font-size: 1.875rem;
     font-weight: 700;
     color: #fff;
 }
-.Skills > p{
-    padding-top: 15px;
+
+.Skills > p {
+    padding-top: 0.9375rem;
     color: rgb(114, 114, 126);
 }
-.progress{
+
+.progress {
     width: 90%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 50px;
-    min-width: 450px;
+    padding-top: 3.125rem;
+    min-width: 28.125rem;
+}
 
-}
-.web_dev{
+.web_dev,
+.prob_sol {
     color: #fff;
     text-align: center;
-    box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 0.625rem #fff;
     width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 1.25rem 0;
 }
-.heading{
-    font-size: 30px;
+
+.heading {
+    font-size: 1.875rem;
     font-weight: 800;
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
-.prob_sol{
-    color: #fff;
-    text-align: center;
-    box-shadow: 0 0 10px #fff;
-    width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+progress {
+    padding-bottom: 0.625rem;
 }
-progress{
-    padding-bottom: 10px;
-}
-#Projects{
-    font-size: 45px;
+
+#Projects {
+    font-size: 2.8125rem;
     font-weight: 900;
     color: #fff;
     background-color: #323949;
-
 }
-/* form css */
-.contact_form{
+
+/* Form CSS */
+.contact_form {
     display: flex;
     flex-direction: column;
 }
+
 .container {
-    /* margin: auto; */
     background-color: #11141a;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #fff;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 0.625rem #fff;
     color: #fff;
 }
-.head{
+
+.head {
     width: 100%;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
 }
+
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
+
 .form-group label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
+.form-group input,
 .form-group textarea {
-    height: 150px;
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+}
+
+.form-group textarea {
+    height: 9.375rem;
     resize: vertical;
 }
+
 .form-group button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
+
 .form-group button:hover {
     background-color: #45a049;
 }
-.contact_info > p{
+
+.contact_info > p {
     color: rgb(114, 114, 126);
 }
-.contact_info > h1{
-    font-size: 25px;
+
+.contact_info > h1 {
+    font-size: 1.5625rem;
     font-weight: 700;
     color: rgb(114, 114, 126);
 }
 
-
-
-footer{
+footer {
     margin: auto;
     align-items: center;
     display: flex;
@@ -245,169 +266,645 @@ footer{
     color: white;
     background-color: #11141a;
 }
-.links{
-    width: 300px;
+
+.links {
+    width: 18.75rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.links a
-{
+
+.links a {
     color: #fff;
     font-size: 2rem;
-    padding-bottom: 10px;
-    transition: 0.3s;
+    padding-bottom: 0.625rem;
+    transition: color 0.3s;
 }
-.links a:hover{
+
+.links a:hover {
     color: #0ef;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     header {
-        padding: 20px 10px; 
+        padding: 1.25rem;
     }
 
     .logo {
-        font-size: 20px; 
+        font-size: 1.25rem;
     }
 
     .nav > a {
-        font-size: 14px; 
-        margin-left: 15px; 
+        font-size: 0.875rem;
+        margin-left: 0.9375rem;
     }
+
     #Home h1 {
-        font-size: 24px; 
+        font-size: 1.5rem;
     }
 
     .About,
     .Skills {
-        padding: 80px 10px; 
-        width: 90%; 
-        max-width: 600px; 
-        margin: auto; 
+        padding: 5rem 1.25rem;
+        width: 90%;
+        max-width: 37.5rem;
+        margin: auto;
     }
 
     .About > h1,
     .Skills > h1 {
-        font-size: 24px; 
+        font-size: 1.5rem;
     }
 
     .cv {
-        font-size: 14px; 
-        padding: 8px 16px; 
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
     }
 
     .Skills .progress {
-        padding-top: 30px; 
+        padding-top: 1.875rem;
     }
 
     .heading {
-        font-size: 24px; 
-        padding-bottom: 10px; 
+        font-size: 1.5rem;
+        padding-bottom: 0.625rem;
     }
 
     #Projects {
-        font-size: 32px; 
+        font-size: 2rem;
     }
 
     .links {
-        width: 180px; 
+        width: 11.25rem;
     }
 
     .links a {
-        font-size: 1.8rem; 
-        padding-bottom: 8px; 
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
     }
-    .progress{
-        display: flex;
+
+    .progress {
         flex-direction: column;
-        justify-content: center;
-        margin-left:  20px; ;
-        min-width: 600px;
+        margin-left: 1.25rem;
+        padding-top: 1.875rem;
+        box-shadow: 0 0 0.625rem #fff;
+        min-width: 37.5rem;
     }
-    .web_dev{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        box-shadow: 0 0 10px #fff;
-    }
-    .web_dev > h1{
+
+    .web_dev > h1,
+    .prob_sol > h1 {
         color: #0ef;
     }
-    .prob_sol{
-        padding-top: 30px;
-        box-shadow: 0 0 10px #fff;
-        padding-bottom:  30px; ;
-    }
-    .prob_sol > h1{
-        color: #0ef;
+
+    .prob_sol {
+        padding-top: 1.875rem;
+        box-shadow: 0 0 0.625rem #fff;
+        padding-bottom: 1.875rem;
     }
 }
-
-
 @media (max-width: 480px) {
-    .header{
-            position: absolute;
-            width: 100vw;
-    }
-    .nav > a {
-        font-size: 12px; 
-        margin-left: 10px; 
+    header {
+        padding: 1rem;
     }
 
-    .img {
-        height: 200px;
-        width: 200px; 
-        padding: 8px; 
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav > a {
+        font-size: 0.75rem;
+        margin-left: 0.625rem;
+    }
+
+    #Home h1 {
+        font-size: 1.25rem;
+    }
+
+    .About,
+    .Skills {
+        padding: 3rem 1rem;
+        width: 90%;
+        max-width: 30rem;
+        margin: auto;
+    }
+
+    .About > h1,
+    .Skills > h1 {
+        font-size: 1.25rem;
     }
 
     .cv {
-        font-size: 12px; 
-        padding: 6px 12px; 
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
     }
 
     .Skills .progress {
-        padding-top: 20px; 
+        padding-top: 1.25rem;
     }
 
     .heading {
-        font-size: 18px; 
-        padding-bottom: 6px; 
+        font-size: 1.125rem;
+        padding-bottom: 0.5rem;
     }
 
     #Projects {
-        font-size: 28px; 
+        font-size: 1.5rem;
     }
 
     .links {
-        width: 140px; 
+        width: 10rem;
     }
-    .set{
-        display: flex;
+
+    .links a {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .progress {
         flex-direction: column;
+        margin-left: 0;
+        padding-top: 1rem;
+        min-width: 100%;
     }
-    .contact_info{
-        padding-bottom: 15px;
+
+    .web_dev,
+    .prob_sol {
+        padding: 1.25rem;
+        box-shadow: 0 0 0.625rem #fff;
     }
-    .progress{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left:  20px;
-    }
-    .web_dev{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        box-shadow: 0 0 10px #fff;
-    }
-    .web_dev > h1{
+
+    .web_dev > h1,
+    .prob_sol > h1 {
         color: #0ef;
     }
-    .prob_sol{
-        padding-top: 30px;
-        box-shadow: 0 0 10px #fff;
-        padding-bottom:  30px; ;
+
+    .contact_form {
+        padding: 1rem;
     }
-    .prob_sol > h1{
+
+    .contact_info {
+        padding-bottom: 1rem;
+    }
+
+    .img {
+        height: 10rem;
+        width: 10rem;
+        padding: 0.5rem;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.25rem 7.5rem;
+    background-color: #11141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.875rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav > a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2.1875rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav > a:hover,
+nav > a.active {
+    color: #0ef;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #1f242d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+
+.set {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Home p {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: rgb(114, 114, 126);
+}
+
+#Home h1 {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 15.625rem;
+    width: 15.625rem;
+    padding: 0.9375rem;
+    background-image: url(1.png);
+    background-size: cover;
+}
+
+#About {
+    background-color: #323949;
+}
+
+.About {
+    padding: 7.5rem 0;
+    width: 50%;
+    margin: auto;
+}
+
+.About > h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 0.625rem 0;
+}
+
+.About > p {
+    padding-bottom: 0.9375rem;
+    color: rgb(114, 114, 126);
+}
+
+.cv {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    border: 1px solid #11141a;
+    border-radius: 25% 10%;
+    padding: 0.625rem 1.25rem;
+    margin-top: 0.625rem;
+}
+
+.cv:hover {
+    background-color: #11141a;
+}
+
+.Skills {
+    padding: 7.5rem 0;
+    width: 50%;
+    margin: auto;
+}
+
+.Skills > h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.Skills > p {
+    padding-top: 0.9375rem;
+    color: rgb(114, 114, 126);
+}
+
+.progress {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3.125rem;
+    min-width: 28.125rem;
+}
+
+.web_dev,
+.prob_sol {
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0.625rem #fff;
+    width: 50%;
+    padding: 1.25rem 0;
+}
+
+.heading {
+    font-size: 1.875rem;
+    font-weight: 800;
+    padding-bottom: 1.25rem;
+}
+
+progress {
+    padding-bottom: 0.625rem;
+}
+
+#Projects {
+    font-size: 2.8125rem;
+    font-weight: 900;
+    color: #fff;
+    background-color: #323949;
+}
+
+/* Form CSS */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #11141a;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 0.625rem #fff;
+    color: #fff;
+}
+
+.head {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.625rem;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3125rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+}
+
+.form-group textarea {
+    height: 9.375rem;
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+.contact_info > p {
+    color: rgb(114, 114, 126);
+}
+
+.contact_info > h1 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: rgb(114, 114, 126);
+}
+
+footer {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #11141a;
+}
+
+.links {
+    width: 18.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links a {
+    color: #fff;
+    font-size: 2rem;
+    padding-bottom: 0.625rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #0ef;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        padding: 1.25rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav > a {
+        font-size: 0.875rem;
+        margin-left: 0.9375rem;
+    }
+
+    #Home h1 {
+        font-size: 1.5rem;
+    }
+
+    .About,
+    .Skills {
+        padding: 5rem 1.25rem;
+        width: 90%;
+        max-width: 37.5rem;
+        margin: auto;
+    }
+
+    .About > h1,
+    .Skills > h1 {
+        font-size: 1.5rem;
+    }
+
+    .cv {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .Skills .progress {
+        padding-top: 1.875rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        padding-bottom: 0.625rem;
+    }
+
+    #Projects {
+        font-size: 2rem;
+    }
+
+    .links {
+        width: 11.25rem;
+    }
+
+    .links a {
+        font-size: 1.8rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .progress {
+        flex-direction: column;
+        margin-left: 1.25rem;
+        padding-top: 1.875rem;
+        box-shadow: 0 0 0.625rem #fff;
+        min-width: 37.5rem;
+    }
+
+    .web_dev > h1,
+    .prob_sol > h1 {
         color: #0ef;
+    }
+
+    .prob_sol {
+        padding-top: 1.875rem;
+        box-shadow: 0 0 0.625rem #fff;
+        padding-bottom: 1.875rem;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav > a {
+        font-size: 0.75rem;
+        margin-left: 0.625rem;
+    }
+
+    #Home h1 {
+        font-size: 1.25rem;
+    }
+
+    .About,
+    .Skills {
+        padding: 3rem 1rem;
+        width: 90%;
+        max-width: 30rem;
+        margin: auto;
+    }
+
+    .About > h1,
+    .Skills > h1 {
+        font-size: 1.25rem;
+    }
+
+    .cv {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .Skills .progress {
+        padding-top: 1.25rem;
+    }
+
+    .heading {
+        font-size: 1.125rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #Projects {
+        font-size: 1.5rem;
+    }
+
+    .links {
+        width: 10rem;
+    }
+
+    .links a {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .progress {
+        flex-direction: column;
+        margin-left: 0;
+        padding-top: 1rem;
+        min-width: 100%;
+    }
+
+    .web_dev,
+    .prob_sol {
+        padding: 1.25rem;
+        box-shadow: 0 0 0.625rem #fff;
+    }
+
+    .web_dev > h1,
+    .prob_sol > h1 {
+        color: #0ef;
+    }
+
+    .contact_form {
+        padding: 1rem;
+    }
+
+    .contact_info {
+        padding-bottom: 1rem;
+    }
+
+    .img {
+        height: 10rem;
+        width: 10rem;
+        padding: 0.5rem;
     }
 }
