@@ -388,7 +388,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         margin-left:  20px; ;
-        min-width: 600px;
+        min-width: 480px;
     }
     .web_dev{
         padding-top: 30px;
